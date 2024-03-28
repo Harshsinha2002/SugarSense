@@ -1,0 +1,752 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".Graph_Data_Input_Page">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="20sp"
+                app:strokeColor="@color/blue"
+                app:strokeWidth="3dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:background="@color/white">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/Fasting_and_PP_test"
+                        android:textSize="22sp"
+                        android:fontFamily="sans-serif-medium"
+                        android:textColor="@color/black"
+                        android:textAlignment="center"
+                        android:padding="20sp"/>
+
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/enter_your_fasting_sugar_test_restult_here"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:paddingStart="20dp"
+                android:textStyle="italic"
+                android:fontFamily="sans-serif" />
+
+            <LinearLayout
+                android:layout_marginTop="20sp"
+                android:layout_marginStart="20sp"
+                android:layout_marginEnd="20sp"
+                android:layout_marginBottom="10sp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_gravity="center_vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="@string/test_1"
+                    android:textSize="18sp"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:layout_marginEnd="10dp"
+                    android:gravity="center_vertical"/>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginEnd="15dp"
+                    app:boxStrokeColor="@color/blue"
+                    app:boxStrokeWidth="2dp"
+                    app:cursorColor="@color/blue"
+                    app:hintTextColor="@color/blue"
+                    app:boxBackgroundColor="#ffffff"
+                    android:hint="Data 1"
+                    android:textColorHint="@color/black">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/Fasting_Test1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp"
+                        android:inputType="number"
+                        android:textColor="@color/black"
+                        android:textColorHint="#546E7A"
+                        tools:ignore="VisualLintTextFieldSize"/>
+                </com.google.android.material.textfield.TextInputLayout>
+            </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_marginStart="20sp"
+            android:layout_marginEnd="20sp"
+            android:layout_marginBottom="10sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center_vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="@string/test_2"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:layout_marginEnd="10dp"
+                android:textColor="@color/black"
+                android:gravity="center_vertical"/>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="15dp"
+                app:boxStrokeColor="@color/blue"
+                app:boxStrokeWidth="2dp"
+                app:cursorColor="@color/blue"
+                app:hintTextColor="@color/blue"
+                app:boxBackgroundColor="#ffffff"
+                android:hint="Data 2"
+                android:textColorHint="@color/black">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/Fasting_Test2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:inputType="number"
+                    android:textColor="@color/black"
+                    android:textColorHint="#546E7A"
+                    tools:ignore="VisualLintTextFieldSize"/>
+            </com.google.android.material.textfield.TextInputLayout>
+        </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_marginStart="20sp"
+                android:layout_marginEnd="20sp"
+                android:layout_marginBottom="10sp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_gravity="center_vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="@string/test_3"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:layout_marginEnd="10dp"
+                    android:textColor="@color/black"
+                    android:gravity="center_vertical"/>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginEnd="15dp"
+                    app:boxStrokeColor="@color/blue"
+                    app:boxStrokeWidth="2dp"
+                    app:cursorColor="@color/blue"
+                    app:hintTextColor="@color/blue"
+                    app:boxBackgroundColor="#ffffff"
+                    android:hint="Data 3"
+                    android:textColorHint="@color/black">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/Fasting_Test3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp"
+                        android:inputType="number"
+                        android:textColor="@color/black"
+                        android:textColorHint="#546E7A"
+                        tools:ignore="VisualLintTextFieldSize"/>
+                </com.google.android.material.textfield.TextInputLayout>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_marginStart="20sp"
+                android:layout_marginEnd="20sp"
+                android:layout_marginBottom="10sp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_gravity="center_vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="@string/test_4"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:layout_marginEnd="10dp"
+                    android:textColor="@color/black"
+                    android:gravity="center_vertical"/>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginEnd="15dp"
+                    app:boxStrokeColor="@color/blue"
+                    app:boxStrokeWidth="2dp"
+                    app:cursorColor="@color/blue"
+                    app:hintTextColor="@color/blue"
+                    app:boxBackgroundColor="#ffffff"
+                    android:hint="Data 4"
+                    android:textColorHint="@color/black">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/Fasting_Test4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp"
+                        android:inputType="number"
+                        android:textColor="@color/black"
+                        android:textColorHint="#546E7A"
+                        tools:ignore="VisualLintTextFieldSize"/>
+                </com.google.android.material.textfield.TextInputLayout>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_marginStart="20sp"
+                android:layout_marginEnd="20sp"
+                android:layout_marginBottom="10sp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_gravity="center_vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="@string/test_5"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:layout_marginEnd="10dp"
+                    android:textColor="@color/black"
+                    android:gravity="center_vertical"/>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginEnd="15dp"
+                    app:boxStrokeColor="@color/blue"
+                    app:boxStrokeWidth="2dp"
+                    app:cursorColor="@color/blue"
+                    app:hintTextColor="@color/blue"
+                    app:boxBackgroundColor="#ffffff"
+                    android:hint="Data 5"
+                    android:textColorHint="@color/black">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/Fasting_Test5"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp"
+                        android:inputType="number"
+                        android:textColor="@color/black"
+                        android:textColorHint="#546E7A"
+                        tools:ignore="VisualLintTextFieldSize"/>
+                </com.google.android.material.textfield.TextInputLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginStart="20sp"
+                android:layout_marginEnd="20sp"
+                android:layout_marginBottom="10sp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_gravity="center_vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="@string/test_6"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:layout_marginEnd="10dp"
+                    android:textColor="@color/black"
+                    android:gravity="center_vertical"/>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginEnd="15dp"
+                    app:boxStrokeColor="@color/blue"
+                    app:boxStrokeWidth="2dp"
+                    app:cursorColor="@color/blue"
+                    app:hintTextColor="@color/blue"
+                    app:boxBackgroundColor="#ffffff"
+                    android:hint="Data 6"
+                    android:textColorHint="@color/black">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/Fasting_Test6"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp"
+                        android:inputType="number"
+                        android:textColor="@color/black"
+                        android:textColorHint="#546E7A"
+                        tools:ignore="VisualLintTextFieldSize"/>
+                </com.google.android.material.textfield.TextInputLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginStart="20sp"
+                android:layout_marginEnd="20sp"
+                android:layout_marginBottom="10sp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_gravity="center_vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="@string/test_7"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:layout_marginEnd="10dp"
+                    android:textColor="@color/black"
+                    android:gravity="center_vertical"/>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginEnd="15dp"
+                    app:boxStrokeColor="@color/blue"
+                    app:boxStrokeWidth="2dp"
+                    app:cursorColor="@color/blue"
+                    app:hintTextColor="@color/blue"
+                    app:boxBackgroundColor="#ffffff"
+                    android:hint="Data 7"
+                    android:textColorHint="@color/black">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/Fasting_Test7"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp"
+                        android:inputType="number"
+                        android:textColor="@color/black"
+                        android:textColorHint="#546E7A"
+                        tools:ignore="VisualLintTextFieldSize"/>
+                </com.google.android.material.textfield.TextInputLayout>
+            </LinearLayout>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/enter_your_pp_sugar_test_restult_here"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:paddingStart="20dp"
+                android:textStyle="italic"
+                android:fontFamily="sans-serif" />
+
+            <LinearLayout
+                android:layout_marginTop="20sp"
+                android:layout_marginStart="20sp"
+                android:layout_marginEnd="20sp"
+                android:layout_marginBottom="10sp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_gravity="center_vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="@string/test_1"
+                    android:textSize="18sp"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:layout_marginEnd="10dp"
+                    android:gravity="center_vertical"/>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginEnd="15dp"
+                    app:boxStrokeColor="@color/blue"
+                    app:boxStrokeWidth="2dp"
+                    app:cursorColor="@color/blue"
+                    app:hintTextColor="@color/blue"
+                    app:boxBackgroundColor="#ffffff"
+                    android:hint="Data 1"
+                    android:textColorHint="@color/black">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/PP_Test1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp"
+                        android:inputType="number"
+                        android:textColor="@color/black"
+                        android:textColorHint="#546E7A"
+                        tools:ignore="VisualLintTextFieldSize"/>
+                </com.google.android.material.textfield.TextInputLayout>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_marginStart="20sp"
+                android:layout_marginEnd="20sp"
+                android:layout_marginBottom="10sp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_gravity="center_vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="@string/test_2"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:layout_marginEnd="10dp"
+                    android:textColor="@color/black"
+                    android:gravity="center_vertical"/>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginEnd="15dp"
+                    app:boxStrokeColor="@color/blue"
+                    app:boxStrokeWidth="2dp"
+                    app:cursorColor="@color/blue"
+                    app:hintTextColor="@color/blue"
+                    app:boxBackgroundColor="#ffffff"
+                    android:hint="Data 2"
+                    android:textColorHint="@color/black">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/PP_Test2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp"
+                        android:inputType="number"
+                        android:textColor="@color/black"
+                        android:textColorHint="#546E7A"
+                        tools:ignore="VisualLintTextFieldSize"/>
+                </com.google.android.material.textfield.TextInputLayout>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_marginStart="20sp"
+                android:layout_marginEnd="20sp"
+                android:layout_marginBottom="10sp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_gravity="center_vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="@string/test_3"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:layout_marginEnd="10dp"
+                    android:textColor="@color/black"
+                    android:gravity="center_vertical"/>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginEnd="15dp"
+                    app:boxStrokeColor="@color/blue"
+                    app:boxStrokeWidth="2dp"
+                    app:cursorColor="@color/blue"
+                    app:hintTextColor="@color/blue"
+                    app:boxBackgroundColor="#ffffff"
+                    android:hint="Data 3"
+                    android:textColorHint="@color/black">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/PP_Test3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp"
+                        android:inputType="number"
+                        android:textColor="@color/black"
+                        android:textColorHint="#546E7A"
+                        tools:ignore="VisualLintTextFieldSize"/>
+                </com.google.android.material.textfield.TextInputLayout>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_marginStart="20sp"
+                android:layout_marginEnd="20sp"
+                android:layout_marginBottom="10sp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_gravity="center_vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="@string/test_4"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:layout_marginEnd="10dp"
+                    android:textColor="@color/black"
+                    android:gravity="center_vertical"/>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginEnd="15dp"
+                    app:boxStrokeColor="@color/blue"
+                    app:boxStrokeWidth="2dp"
+                    app:cursorColor="@color/blue"
+                    app:hintTextColor="@color/blue"
+                    app:boxBackgroundColor="#ffffff"
+                    android:hint="Data 4"
+                    android:textColorHint="@color/black">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/PP_Test4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp"
+                        android:inputType="number"
+                        android:textColor="@color/black"
+                        android:textColorHint="#546E7A"
+                        tools:ignore="VisualLintTextFieldSize"/>
+                </com.google.android.material.textfield.TextInputLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginStart="20sp"
+                android:layout_marginEnd="20sp"
+                android:layout_marginBottom="10sp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_gravity="center_vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="@string/test_5"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:layout_marginEnd="10dp"
+                    android:textColor="@color/black"
+                    android:gravity="center_vertical"/>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginEnd="15dp"
+                    app:boxStrokeColor="@color/blue"
+                    app:boxStrokeWidth="2dp"
+                    app:cursorColor="@color/blue"
+                    app:hintTextColor="@color/blue"
+                    app:boxBackgroundColor="#ffffff"
+                    android:hint="Data 5"
+                    android:textColorHint="@color/black">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/PP_Test5"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp"
+                        android:inputType="number"
+                        android:textColor="@color/black"
+                        android:textColorHint="#546E7A"
+                        tools:ignore="VisualLintTextFieldSize"/>
+                </com.google.android.material.textfield.TextInputLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginStart="20sp"
+                android:layout_marginEnd="20sp"
+                android:layout_marginBottom="10sp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_gravity="center_vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="@string/test_6"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:layout_marginEnd="10dp"
+                    android:textColor="@color/black"
+                    android:gravity="center_vertical"/>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginEnd="15dp"
+                    app:boxStrokeColor="@color/blue"
+                    app:boxStrokeWidth="2dp"
+                    app:cursorColor="@color/blue"
+                    app:hintTextColor="@color/blue"
+                    app:boxBackgroundColor="#ffffff"
+                    android:hint="Data 6"
+                    android:textColorHint="@color/black">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/PP_Test6"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp"
+                        android:inputType="number"
+                        android:textColor="@color/black"
+                        android:textColorHint="#546E7A"
+                        tools:ignore="VisualLintTextFieldSize"/>
+                </com.google.android.material.textfield.TextInputLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginStart="20sp"
+                android:layout_marginEnd="20sp"
+                android:layout_marginBottom="10sp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_gravity="center_vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="@string/test_7"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:layout_marginEnd="10dp"
+                    android:textColor="@color/black"
+                    android:gravity="center_vertical"/>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginEnd="15dp"
+                    app:boxStrokeColor="@color/blue"
+                    app:boxStrokeWidth="2dp"
+                    app:cursorColor="@color/blue"
+                    app:hintTextColor="@color/blue"
+                    app:boxBackgroundColor="#ffffff"
+                    android:hint="Data 7"
+                    android:textColorHint="@color/black">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/PP_Test7"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp"
+                        android:inputType="number"
+                        android:textColor="@color/black"
+                        android:textColorHint="#546E7A"
+                        tools:ignore="VisualLintTextFieldSize"/>
+                </com.google.android.material.textfield.TextInputLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_margin="20sp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center">
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/Save_Data_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Sava Data"
+                    android:layout_marginEnd="30sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:backgroundTint="#f6fff8"
+                    app:strokeColor="#2ec4b6"
+                    app:strokeWidth="5dp"
+                    app:cornerRadius="7dp"/>
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/Delete_Data_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Delete Data"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:backgroundTint="#f6fff8"
+                    app:strokeWidth="5dp"
+                    app:strokeColor="#d1495b"
+                    app:cornerRadius="7dp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center">
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/Generate_Graph_btn"
+                android:layout_width="270dp"
+                android:layout_height="wrap_content"
+                android:text="Generate Graph"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:backgroundTint="#9d4edd"
+                app:cornerRadius="7dp"/>
+            </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50sp"
+            android:orientation="horizontal"
+            android:gravity="center"/>
+
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

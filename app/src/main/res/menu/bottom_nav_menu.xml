@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigation_home"
+        android:icon="@drawable/ic_home_black_24dp"
+        android:title="@string/title_home" />
+
+    <item
+        android:id="@+id/navigation_graph_analysis"
+        android:icon="@drawable/baseline_auto_graph_24"
+        android:title="@string/title_graph_analysis" />
+
+    <item
+        android:id="@+id/navigation_remedies"
+        android:icon="@drawable/baseline_safety_check_24"
+        android:title="@string/title_remedies" />
+
+    <item
+        android:id="@+id/navigation_explore_more"
+        android:icon="@drawable/baseline_explore_24"
+        android:title="@string/title_explore_more" />
+
+</menu>

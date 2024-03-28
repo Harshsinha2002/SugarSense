@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_home">
+
+    <fragment
+        android:id="@+id/navigation_home"
+        android:name="com.example.sugarsense.ui.home.Home_Fragment"
+        android:label="@string/title_home"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/navigation_graph_analysis"
+        android:name="com.example.sugarsense.ui.graph_alalysis.Graph_Analysis_Fragment"
+        android:label="@string/title_graph_analysis"
+        tools:layout="@layout/fragment_graph_analysis" />
+
+    <fragment
+        android:id="@+id/navigation_remedies"
+        android:name="com.example.sugarsense.ui.remedies.Remedies_Fragment"
+        android:label="@string/title_remedies"
+        tools:layout="@layout/fragment_remedies" />
+
+    <fragment
+        android:id="@+id/navigation_explore_more"
+        android:name="com.example.sugarsense.ui.explore_more.Explore_More_Fragment"
+        android:label="@string/title_explore_more"
+        tools:layout="@layout/fragment_explore__more_" />
+</navigation>

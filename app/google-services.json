@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "325107598889",
+    "project_id": "sugarsense-android-app",
+    "storage_bucket": "sugarsense-android-app.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:325107598889:android:b41861f5d62c33278f7e38",
+        "android_client_info": {
+          "package_name": "com.example.sugarsense"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBGecXLVwXd4NWDPGWYPV-BcIsWA8Dksz4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

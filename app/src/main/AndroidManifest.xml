@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-feature
+        android:name="android.hardware.telephony"
+        android:required="false" />
+
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.SugarSense"
+        tools:targetApi="31">
+        <activity
+            android:name=".Splash_Screen_Diabetes_Risk_Analysis"
+            android:exported="false"
+            android:theme="@style/Theme.AppCompat.NoActionBar"/>
+        <activity
+            android:name=".Your_Analysis_Report_Page"
+            android:exported="false" />
+        <activity
+            android:name=".Diabetes_Risk_Analysis_Page"
+            android:exported="false"/>
+        <activity
+            android:name=".Remedies_page"
+            android:exported="false" />
+        <activity
+            android:name=".Assistance_Page"
+            android:exported="false" />
+        <activity
+            android:name=".Diet_Plans_Page"
+            android:exported="false" />
+        <activity
+            android:name=".Precautions_Page"
+            android:exported="false" />
+        <activity
+            android:name=".Health_Risk_Page"
+            android:exported="false" />
+        <activity
+            android:name=".Graph_Generation_Page"
+            android:exported="false" />
+        <activity
+            android:name=".Graph_Data_Input_Page"
+            android:exported="false" />
+        <activity
+            android:name=".Forgot_Password_Page"
+            android:exported="false" />
+        <activity
+            android:name=".Sign_Up_Page"
+            android:exported="false" />
+        <activity
+            android:name=".Login_Page"
+            android:exported="true"
+            android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:exported="false" />
+    </application>
+
+</manifest>
